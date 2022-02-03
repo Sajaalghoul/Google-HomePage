@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advanced search</title>
+        <style type="text/css">
+              *{
+                margin: 0;
+	            padding: 0;
+            }
+            body{
+
+                height: 70vh;
+                margin-left: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+         }
+  
+            .search{
+                display: flex;
+            }
+            a{
+                position:absolute;
+                top:30px;
+                right: 50px;
+                text-decoration: none;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+            .sections{
+                margin: 35px;
+            }
+            .words{
+                display: inline-block;
+                 width: 200px;
+                 text-align: left;
+            }
+            input{
+                width: 300px;
+            }
+            .ads{
+                margin-left: 450px;
+                width: 100px;
+                padding: 10px;
+                background-color: blue;
+                color: white;
+                border: 1px solid #ccc;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="search">
+            <a href="index.html">Google search</a>
+        </div>
+        <form  action="https://google.com/search">
+            <div class="box">
+                <p style="font-size: 20px;">Find pages with....</p>
+                <div class="sections" >
+                    <span class="words" >all these words:</span>
+                    <input type="text" name="q">
+    
+                </div>
+                <div class="sections" >
+                   <span class="words" >this exaxct word or phrase:</span>
+                    <input type="text" name="as_epq">
+                    
+    
+               </div>
+               <div class="sections" >
+                   <span  class="words" >any of these words:</span>
+                   <input type="text" name="as_oq">
+    
+               </div>
+               <div class="sections" >
+                   <span  class="words" > none of these words:</span>
+                   <input type="text" name="as_eq">
+    
+               </div>
+               <input class="ads" type="submit" vslue="Advanced Search">
+         </form>
+            </div>
+            
+            
+        
+    </body>
+</html>
