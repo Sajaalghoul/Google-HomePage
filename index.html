@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="refresh" content="100">
+        <title>Search</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style type="text/css">
+            *{
+                margin: 0;
+	            padding: 0;
+            }
+            body{
+
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+         }
+         #gimg{
+           
+            margin: 20px;
+         
+            left: 40%;
+         }
+         .box{
+            
+            width: 500px;
+            height: 20px;
+            border-radius: 30px;
+            border:1px solid #ccc;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+
+}
+        
+    .box > i {
+         font-size: 20px;
+         color: #777;
+
+}
+
+    .box > input{
+
+        flex-grow: 1;
+        height: 40px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding-left: 10px;
+
+
+}
+.boxx{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+          
+          
+        }
+    .searchb{
+        margin: 10px;
+        padding: 10px;
+        border:1px solid #ccc;
+        border-radius: 15px;
+}   
+    .linksf{
+        position:absolute;
+         top:30px;
+         right: 50px;
+
+    }
+    .links{
+        text-decoration: none;
+        margin-right: 10px;
+        color: black;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+        
+    </style>
+    </head>
+    <body>
+  
+            <div class="linksf">
+                <a class="links" href="ImgSearch.html">Image Search</a>
+                <a class="links"  href="advanced.html">Advanced Search</a>
+            </div>
+            <img id="gimg" src="google.png">
+           <form  action="https://google.com/search">
+            
+            <div class="box">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" name="q" placeholder="search in google or write your URL">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <div class="boxx">
+                <input class="searchb" type="submit" value="Google Search">
+                <input  class="searchb" type="submit" value=" I’m Feeling Lucky">
+            </div>
+            </form>
+       
+    
+        
+    </body>
+</html>
